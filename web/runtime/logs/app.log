@@ -1,0 +1,307 @@
+2020-09-22 12:39:22 [127.0.0.1][-][4d01ea564141d4a936433dc35d0a4492][error][yii\base\InvalidConfigException] ReflectionException: Class app\modules\admin\Module does not exist in /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/di/Container.php:453
+Stack trace:
+#0 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/di/Container.php(453): ReflectionClass->__construct('app\\modules\\adm...')
+#1 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/di/Container.php(380): yii\di\Container->getDependencies('app\\modules\\adm...')
+#2 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/di/Container.php(165): yii\di\Container->build('app\\modules\\adm...', Array, Array)
+#3 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('app\\modules\\adm...', Array, Array)
+#4 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Module.php(586): yii\base\Module->getModule('admin')
+#6 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('articles/index')
+#7 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/articles/...', Array)
+#8 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/pavel/www.local/nebbia/web/index.php(12): yii\base\Application->run()
+#10 {main}
+
+Next yii\base\InvalidConfigException: Failed to instantiate component or class "app\modules\admin\Module". in /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/di/Container.php:455
+Stack trace:
+#0 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/di/Container.php(380): yii\di\Container->getDependencies('app\\modules\\adm...')
+#1 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/di/Container.php(165): yii\di\Container->build('app\\modules\\adm...', Array, Array)
+#2 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('app\\modules\\adm...', Array, Array)
+#3 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#4 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Module.php(586): yii\base\Module->getModule('admin')
+#5 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('articles/index')
+#6 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/articles/...', Array)
+#7 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /home/pavel/www.local/nebbia/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2020-09-22 12:39:22 [127.0.0.1][-][4d01ea564141d4a936433dc35d0a4492][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '4d01ea564141d4a936433dc35d0a4492'
+    '_csrf' => '495df0ea3379bdd1933eed8673acd8f91a2f4488530cfc658c4fb8f3a426f12ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-KGmpayMh4f1riEtxpxNNfjpGe1YXlSU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'X2nUWnoCygBn2DaDA7kPugAAAAE'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'X2nUWnoCygBn2DaDA7kPugAAAAE'
+    'HTTP_HOST' => 'nebbia'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:80.0) Gecko/20100101 Firefox/80.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://nebbia/web/admin/tag/view?id=1'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=4d01ea564141d4a936433dc35d0a4492; _csrf=495df0ea3379bdd1933eed8673acd8f91a2f4488530cfc658c4fb8f3a426f12ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-KGmpayMh4f1riEtxpxNNfjpGe1YXlSU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Unix) OpenSSL/1.1.1g PHP/7.4.8 mod_perl/2.0.11 Perl/v5.32.0'
+    'SERVER_NAME' => 'nebbia'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/pavel/www.local/nebbia'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/pavel/www.local/nebbia'
+    'SERVER_ADMIN' => 'nebbia'
+    'SCRIPT_FILENAME' => '/home/pavel/www.local/nebbia/web/index.php'
+    'REMOTE_PORT' => '41526'
+    'REDIRECT_URL' => '/web/admin/articles/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/admin/articles/index'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1600771162.495
+    'REQUEST_TIME' => 1600771162
+]
+2020-09-22 12:39:26 [127.0.0.1][-][4d01ea564141d4a936433dc35d0a4492][error][yii\base\InvalidConfigException] ReflectionException: Class app\modules\admin\Module does not exist in /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/di/Container.php:453
+Stack trace:
+#0 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/di/Container.php(453): ReflectionClass->__construct('app\\modules\\adm...')
+#1 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/di/Container.php(380): yii\di\Container->getDependencies('app\\modules\\adm...')
+#2 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/di/Container.php(165): yii\di\Container->build('app\\modules\\adm...', Array, Array)
+#3 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('app\\modules\\adm...', Array, Array)
+#4 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#5 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Module.php(586): yii\base\Module->getModule('admin')
+#6 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('tag/view')
+#7 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/tag/view', Array)
+#8 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/pavel/www.local/nebbia/web/index.php(12): yii\base\Application->run()
+#10 {main}
+
+Next yii\base\InvalidConfigException: Failed to instantiate component or class "app\modules\admin\Module". in /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/di/Container.php:455
+Stack trace:
+#0 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/di/Container.php(380): yii\di\Container->getDependencies('app\\modules\\adm...')
+#1 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/di/Container.php(165): yii\di\Container->build('app\\modules\\adm...', Array, Array)
+#2 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('app\\modules\\adm...', Array, Array)
+#3 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#4 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Module.php(586): yii\base\Module->getModule('admin')
+#5 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Module->createController('tag/view')
+#6 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('admin/tag/view', Array)
+#7 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /home/pavel/www.local/nebbia/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2020-09-22 12:39:26 [127.0.0.1][-][4d01ea564141d4a936433dc35d0a4492][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '4d01ea564141d4a936433dc35d0a4492'
+    '_csrf' => '495df0ea3379bdd1933eed8673acd8f91a2f4488530cfc658c4fb8f3a426f12ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-KGmpayMh4f1riEtxpxNNfjpGe1YXlSU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'X2nUXpGAh3XlZeaTkI@iDwAAAAQ'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'X2nUXpGAh3XlZeaTkI@iDwAAAAQ'
+    'HTTP_HOST' => 'nebbia'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:80.0) Gecko/20100101 Firefox/80.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://nebbia/web/admin/tag/create'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=4d01ea564141d4a936433dc35d0a4492; _csrf=495df0ea3379bdd1933eed8673acd8f91a2f4488530cfc658c4fb8f3a426f12ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-KGmpayMh4f1riEtxpxNNfjpGe1YXlSU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Unix) OpenSSL/1.1.1g PHP/7.4.8 mod_perl/2.0.11 Perl/v5.32.0'
+    'SERVER_NAME' => 'nebbia'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/pavel/www.local/nebbia'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/pavel/www.local/nebbia'
+    'SERVER_ADMIN' => 'nebbia'
+    'SCRIPT_FILENAME' => '/home/pavel/www.local/nebbia/web/index.php'
+    'REMOTE_PORT' => '41528'
+    'REDIRECT_URL' => '/web/admin/tag/view'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/web/admin/tag/view?id=1'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1600771166.011
+    'REQUEST_TIME' => 1600771166
+]
+2020-09-22 12:39:32 [127.0.0.1][-][4d01ea564141d4a936433dc35d0a4492][error][yii\base\ErrorException:256] yii\base\ErrorException: Exception 'yii\base\InvalidArgumentException' with message 'The file or directory to be published does not exist: /home/pavel/www.local/nebbia/web/vendor/bower-asset/jquery/dist' 
+
+in /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/web/AssetManager.php:455
+
+Stack trace:
+#0 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/web/AssetBundle.php(185): yii\web\AssetManager->publish('/home/pavel/www...', Array)
+#1 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/web/AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/web/AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/web/View.php(287): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/web/View.php(292): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/web/View.php(292): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/web/AssetBundle.php(125): yii\web\View->registerAssetBundle('yii\\validators\\...')
+#7 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/validators/FilterValidator.php(91): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/widgets/ActiveField.php(833): yii\validators\FilterValidator->clientValidateAttribute(Object(yii\gii\generators\crud\Generator), 'modelClass', Object(yii\web\View))
+#9 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/widgets/ActiveField.php(233): yii\widgets\ActiveField->getClientOptions()
+#10 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/widgets/ActiveField.php(223): yii\widgets\ActiveField->begin()
+#11 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/widgets/ActiveField.php(176): yii\widgets\ActiveField->render()
+#12 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2-gii/src/generators/crud/form.php(6): yii\widgets\ActiveField->__toString()
+#13 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/View.php(348): require('/home/pavel/www...')
+#14 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/pavel/www...', Array)
+#15 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2-gii/src/views/default/view.php(43): yii\base\View->renderFile('/home/pavel/www...', Array)
+#16 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/View.php(348): require('/home/pavel/www...')
+#17 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/pavel/www...', Array)
+#18 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/pavel/www...', Array, Object(yii\gii\controllers\DefaultController))
+#19 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Controller.php(409): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#20 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2-gii/src/controllers/DefaultController.php(72): yii\base\Controller->render('view', Array)
+#21 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#22 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams(Array)
+#24 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#25 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#26 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /home/pavel/www.local/nebbia/web/index.php(12): yii\base\Application->run()
+#28 {main} in /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/ErrorHandler.php:343
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(256, 'Exception 'yii\\...', '/home/pavel/www...', 343, Array)
+#1 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/ErrorHandler.php(343): trigger_error('Exception 'yii\\...', 256)
+#2 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/widgets/ActiveField.php(178): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\InvalidArgumentException))
+#3 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2-gii/src/generators/crud/form.php(6): yii\widgets\ActiveField->__toString()
+#4 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/View.php(348): require('/home/pavel/www...')
+#5 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/pavel/www...', '[<span class="s...')
+#6 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2-gii/src/views/default/view.php(43): yii\base\View->renderFile('/home/pavel/www...', Array)
+#7 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/View.php(348): require('/home/pavel/www...')
+#8 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile('/home/pavel/www...', '[<span class="s...')
+#9 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile('/home/pavel/www...', Array, Object(yii\gii\controllers\DefaultController))
+#10 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Controller.php(409): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#11 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2-gii/src/controllers/DefaultController.php(72): yii\base\Controller->render('view', Array)
+#12 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#13 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams(Array)
+#15 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#16 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#17 /home/pavel/www.local/nebbia/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /home/pavel/www.local/nebbia/web/index.php(12): yii\base\Application->run()
+#19 {main}
+2020-09-22 12:39:31 [127.0.0.1][-][4d01ea564141d4a936433dc35d0a4492][info][application] $_GET = [
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'FehIs-W9B7P9v62xWDF5j9QfRFE6Va-ArGTSuo5AaRs4ow_eldx-_pWLy4AqWDz7rG88H3QzxfDrAePj1iw6Tg=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\Tag'
+        'searchModelClass' => 'app\\models\\TagSearch'
+        'controllerClass' => 'app\\modules\\admin\\controllers\\TagController'
+        'viewPath' => '@app/modules/admin/views/tag'
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'answers' => [
+        '644b81844c1ea6b1f91d47de064a3a39' => '1'
+        '39c92ce3ab691573f5cfc949497afb8e' => '1'
+        'b4e7296b06fc08f683f43cce8cfc9225' => '1'
+        'bf1f5a940d101c8ed2aa4a302cbfa26a' => '1'
+        '3b9b7ef381d55d20e7266e8cae33f20f' => '1'
+        '3f8e3803e939ad75831ab12af1eb6f69' => '1'
+        'eda4469b07924ee876140bca9283a9df' => '1'
+        '320d4726863ba5d0e94152712aad5935' => '1'
+    ]
+    'generate' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '4d01ea564141d4a936433dc35d0a4492'
+    '_csrf' => '495df0ea3379bdd1933eed8673acd8f91a2f4488530cfc658c4fb8f3a426f12ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-KGmpayMh4f1riEtxpxNNfjpGe1YXlSU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'X2nUYzZ4hAv83P5DbhPzFgAAAAc'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'X2nUYzZ4hAv83P5DbhPzFgAAAAc'
+    'HTTP_HOST' => 'nebbia'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:80.0) Gecko/20100101 Firefox/80.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://nebbia/web/gii/crud'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '957'
+    'HTTP_ORIGIN' => 'http://nebbia'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=4d01ea564141d4a936433dc35d0a4492; _csrf=495df0ea3379bdd1933eed8673acd8f91a2f4488530cfc658c4fb8f3a426f12ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-KGmpayMh4f1riEtxpxNNfjpGe1YXlSU%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.43 (Unix) OpenSSL/1.1.1g PHP/7.4.8 mod_perl/2.0.11 Perl/v5.32.0'
+    'SERVER_NAME' => 'nebbia'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/pavel/www.local/nebbia'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/pavel/www.local/nebbia'
+    'SERVER_ADMIN' => 'nebbia'
+    'SCRIPT_FILENAME' => '/home/pavel/www.local/nebbia/web/index.php'
+    'REMOTE_PORT' => '41530'
+    'REDIRECT_URL' => '/web/gii/crud'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/gii/crud'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1600771171.972
+    'REQUEST_TIME' => 1600771171
+]
